@@ -84,7 +84,7 @@ public class AuthorizationServlet extends HttpServlet {
         
           Connection conn = null;
         String urlConnectMySql = 
-                "jdbc:mysql://localhost:3306/test";
+                "jdbc:mysql://localhost:3306/test?useSSL=false";
         try {
         conn = 
                 DriverManager.getConnection(
